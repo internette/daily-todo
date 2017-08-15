@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
 html, body {
   margin: 0;
-  overflow-x: hidden; }
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw; }
 
 * {
   box-sizing: border-box; }
@@ -58,25 +60,22 @@ section {
           background-repeat: repeat-y; }
     section #app #content {
       position: relative; }
-      section #app #content ul {
+      section #app #content nav {
         list-style-type: none;
         margin: 1rem 0 0;
         padding: 0; }
-        section #app #content ul li {
+        section #app #content nav a {
+          display: block;
           padding: 0;
           border-bottom: 1px solid rgba(157, 157, 157, 0.95);
           color: white;
-          letter-spacing: 1.5px; }
-          section #app #content ul li:first-child a {
+          letter-spacing: 1.5px;
+          text-decoration: none;
+          padding: 0.5rem 0.3rem; }
+          section #app #content nav a.active {
             color: rgba(157, 157, 157, 0.95);
             text-decoration: line-through; }
-          section #app #content ul li a {
-            display: block;
-            text-decoration: none;
-            padding: 0.5rem 0.3rem; }
-          section #app #content ul li:not(:first-child) a {
-            color: white; }
-          section #app #content ul li span {
+          section #app #content nav a span {
             float: right;
             font-weight: 700;
             font-size: 1.25rem; }
@@ -84,11 +83,15 @@ section {
     padding: 1.5rem;
     position: absolute;
     left: 6.5vw;
-    bottom: 13vh;
+    bottom: 100%;
     width: 32vw;
     font-family: sans-serif;
     z-index: 1;
     border-radius: 4px; }
+    section #app ~ div.active {
+      bottom: 13vh; }
+      section #app ~ div.active ~ div {
+        bottom: -100%; }
     section #app ~ div h1 {
       font-family: 'Inconsolata', sans-serif;
       border-bottom: 1px solid rgba(0, 0, 32, 0.5);

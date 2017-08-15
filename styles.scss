@@ -2,7 +2,9 @@
 @import 'colors';
 html, body {
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 * {
   box-sizing: border-box;
@@ -68,26 +70,21 @@ section {
     }
     #content {
       position: relative;
-      ul {
+      nav {
         list-style-type: none;
         margin: 1rem 0 0;
         padding: 0;
-        li {
+        a {
+          display: block;
           padding: 0;
           border-bottom: 1px solid $gray;
           color: white;
           letter-spacing: 1.5px;
-          &:first-child a {
+          text-decoration: none;
+          padding: 0.5rem 0.3rem;
+          &.active {
             color: $gray;
             text-decoration: line-through;
-          }
-          a {
-            display: block;
-            text-decoration: none;
-            padding: 0.5rem 0.3rem;
-          }
-          &:not(:first-child) a {
-            color: white;
           }
           span {
             float: right;
@@ -102,11 +99,17 @@ section {
     padding: 1.5rem;
     position: absolute;
     left: 6.5vw;
-    bottom: 13vh;
+    bottom: 100%;
     width: 32vw;
     font-family: sans-serif;
     z-index: 1;
     border-radius: 4px;
+    &.active {
+      bottom: 13vh;
+      & ~ div {
+        bottom: -100%;
+      }
+    }
     h1 {
       font-family: 'Inconsolata', sans-serif;
       border-bottom: 1px solid rgba(mix(navy, black, 25%), 0.5);
