@@ -101,7 +101,7 @@ input[type="radio"] {
         color: #28FFFF;
         cursor: pointer; }
       #app nav label:focus {
-        outline-color: #28FFFF; }
+        outline-color: #7ed3ed; }
       #app nav label span {
         float: right;
         font-weight: 700;

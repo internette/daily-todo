@@ -101,7 +101,7 @@ input[type="radio"] {
         cursor: pointer;
       }
       &:focus {
-        outline-color: $header;
+        outline-color: mix($header, skyblue, 10%);
       }
       span {
         float: right;
