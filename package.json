@@ -1,0 +1,23 @@
+{
+  "name": "daily-todo-site",
+  "version": "1.0.0",
+  "description": "This is the repo for the website for the app DailyToDo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twaffl3s/daily-todo-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twaffl3s/daily-todo-site/issues"
+  },
+  "homepage": "https://github.com/twaffl3s/daily-todo-site#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
