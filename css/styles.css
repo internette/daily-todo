@@ -3,96 +3,127 @@ html, body {
   margin: 0;
   overflow: hidden;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  background-color: #daffff; }
 
 * {
   box-sizing: border-box; }
 
+input[type="radio"] {
+  display: none; }
+  input[type="radio"]#greet-visitor:checked ~ * nav [data-selector="greet-visitor"] {
+    color: rgba(157, 157, 157, 0.95);
+    text-decoration: line-through; }
+  input[type="radio"]#greet-visitor:checked ~ section {
+    top: -100%; }
+    input[type="radio"]#greet-visitor:checked ~ section[data-selector="greet-visitor"] {
+      top: 0; }
+      input[type="radio"]#greet-visitor:checked ~ section[data-selector="greet-visitor"] ~ section {
+        top: 100%; }
+  input[type="radio"]#read-more:checked ~ * nav [data-selector="read-more"] {
+    color: rgba(157, 157, 157, 0.95);
+    text-decoration: line-through; }
+  input[type="radio"]#read-more:checked ~ section {
+    top: -100%; }
+    input[type="radio"]#read-more:checked ~ section[data-selector="read-more"] {
+      top: 0; }
+      input[type="radio"]#read-more:checked ~ section[data-selector="read-more"] ~ section {
+        top: 100%; }
+  input[type="radio"]#specs:checked ~ * nav [data-selector="specs"] {
+    color: rgba(157, 157, 157, 0.95);
+    text-decoration: line-through; }
+  input[type="radio"]#specs:checked ~ section {
+    top: -100%; }
+    input[type="radio"]#specs:checked ~ section[data-selector="specs"] {
+      top: 0; }
+      input[type="radio"]#specs:checked ~ section[data-selector="specs"] ~ section {
+        top: 100%; }
+
+#app {
+  width: 39vw;
+  height: 85vh;
+  background: rgba(38, 38, 38, 0.9);
+  position: fixed;
+  top: 50%;
+  margin-top: -42.5vh;
+  left: 52vw;
+  border-radius: 10px;
+  font-family: 'Inconsolata', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1.4rem 1.25rem;
+  opacity: 0.85;
+  z-index: 2; }
+  #app h3 {
+    color: white;
+    margin: 0; }
+    #app h3 span.title:before {
+      content: '//';
+      font-weight: initial;
+      color: rgba(157, 157, 157, 0.95);
+      margin-right: 0.25rem;
+      letter-spacing: 0; }
+    #app h3 span.title span {
+      letter-spacing: 2px;
+      color: #28FFFF; }
+      #app h3 span.title span span {
+        font-weight: 400; }
+    #app h3 #app-nav {
+      font-size: 1.5rem;
+      float: right;
+      margin-top: -0.25rem;
+      position: relative; }
+      #app h3 #app-nav:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0.33rem;
+        left: -0.8rem;
+        width: 1rem;
+        height: 1rem;
+        background-image: radial-gradient(circle at center, white 45%, transparent 45%);
+        background-size: 0.33rem;
+        background-repeat: repeat-y; }
+  #app nav {
+    list-style-type: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    position: relative; }
+    #app nav label {
+      display: block;
+      padding: 0;
+      border-bottom: 1px solid rgba(157, 157, 157, 0.95);
+      color: white;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      padding: 0.5rem 0.3rem; }
+      #app nav label:hover {
+        color: #28FFFF;
+        cursor: pointer; }
+      #app nav label:focus {
+        outline-color: #28FFFF; }
+      #app nav label span {
+        float: right;
+        font-weight: 700;
+        font-size: 1.25rem; }
+
 section {
   height: 100vh;
   width: 100vw;
-  position: relative; }
-  section#welcome {
-    background-color: #daffff; }
-  section #app {
-    width: 39vw;
-    height: 85vh;
-    background: rgba(38, 38, 38, 0.9);
+  transition: 0.2s;
+  position: absolute; }
+  section .container {
     position: absolute;
-    top: 50%;
-    margin-top: -42.5vh;
-    left: 52vw;
-    border-radius: 10px;
-    font-family: 'Inconsolata', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding: 1.4rem 1.25rem;
-    opacity: 0.85; }
-    section #app h3 {
-      color: white;
-      margin: 0; }
-      section #app h3 span.title:before {
-        content: '//';
-        font-weight: initial;
-        color: rgba(157, 157, 157, 0.95);
-        margin-right: 0.25rem;
-        letter-spacing: 0; }
-      section #app h3 span.title span {
-        letter-spacing: 2px;
-        color: #28FFFF; }
-        section #app h3 span.title span span {
-          font-weight: 400; }
-      section #app h3 #app-nav {
-        font-size: 1.5rem;
-        float: right;
-        margin-top: -0.25rem;
-        position: relative; }
-        section #app h3 #app-nav:before {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 0.33rem;
-          left: -0.8rem;
-          width: 1rem;
-          height: 1rem;
-          background-image: radial-gradient(circle at center, white 45%, transparent 45%);
-          background-size: 0.33rem;
-          background-repeat: repeat-y; }
-    section #app #content {
-      position: relative; }
-      section #app #content nav {
-        list-style-type: none;
-        margin: 1rem 0 0;
-        padding: 0; }
-        section #app #content nav a {
-          display: block;
-          padding: 0;
-          border-bottom: 1px solid rgba(157, 157, 157, 0.95);
-          color: white;
-          letter-spacing: 1.5px;
-          text-decoration: none;
-          padding: 0.5rem 0.3rem; }
-          section #app #content nav a.active {
-            color: rgba(157, 157, 157, 0.95);
-            text-decoration: line-through; }
-          section #app #content nav a span {
-            float: right;
-            font-weight: 700;
-            font-size: 1.25rem; }
-  section #app ~ div {
-    padding: 1.5rem;
-    position: absolute;
-    left: 6.5vw;
-    bottom: 100%;
     width: 32vw;
+    left: 6.5vw;
     font-family: sans-serif;
     z-index: 1;
-    border-radius: 4px; }
-    section #app ~ div.active {
-      bottom: 13vh; }
-      section #app ~ div.active ~ div {
-        bottom: -100%; }
-    section #app ~ div h1 {
+    border-radius: 4px;
+    bottom: 13vh; }
+    section .container > div {
+      padding: 1.5rem;
+      position: relative; }
+    section .container h1 {
       font-family: 'Inconsolata', sans-serif;
       border-bottom: 1px solid rgba(0, 0, 32, 0.5);
       padding-bottom: 0.75rem;
@@ -101,7 +132,7 @@ section {
       position: relative;
       margin: 0;
       z-index: 1; }
-      section #app ~ div h1:after {
+      section .container h1:after {
         background-image: repeating-linear-gradient(45deg, black 1px, transparent 2px, transparent 3px);
         content: attr(data-title);
         text-transform: uppercase;
@@ -111,7 +142,7 @@ section {
         color: transparent;
         z-index: -1;
         -webkit-background-clip: text; }
-    section #app ~ div p {
+    section .container p {
       font-size: .9rem;
       line-height: 1.3rem;
       letter-spacing: .5px; }
