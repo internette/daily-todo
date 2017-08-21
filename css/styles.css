@@ -9,35 +9,90 @@ html, body {
 * {
   box-sizing: border-box; }
 
-input[type="radio"] {
+.mobile {
   display: none; }
-  input[type="radio"]#greet-visitor:checked ~ * nav [data-selector="greet-visitor"] {
-    color: rgba(157, 157, 157, 0.95);
-    text-decoration: line-through; }
-  input[type="radio"]#greet-visitor:checked ~ section {
-    top: -100%; }
-    input[type="radio"]#greet-visitor:checked ~ section[data-selector="greet-visitor"] {
-      top: 0; }
-      input[type="radio"]#greet-visitor:checked ~ section[data-selector="greet-visitor"] ~ section {
-        top: 100%; }
-  input[type="radio"]#read-more:checked ~ * nav [data-selector="read-more"] {
-    color: rgba(157, 157, 157, 0.95);
-    text-decoration: line-through; }
-  input[type="radio"]#read-more:checked ~ section {
-    top: -100%; }
-    input[type="radio"]#read-more:checked ~ section[data-selector="read-more"] {
-      top: 0; }
-      input[type="radio"]#read-more:checked ~ section[data-selector="read-more"] ~ section {
-        top: 100%; }
-  input[type="radio"]#specs:checked ~ * nav [data-selector="specs"] {
-    color: rgba(157, 157, 157, 0.95);
-    text-decoration: line-through; }
-  input[type="radio"]#specs:checked ~ section {
-    top: -100%; }
-    input[type="radio"]#specs:checked ~ section[data-selector="specs"] {
-      top: 0; }
-      input[type="radio"]#specs:checked ~ section[data-selector="specs"] ~ section {
-        top: 100%; }
+
+.desktop {
+  display: block; }
+
+input {
+  display: none; }
+  input#toggle-list ~ h3 ul {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 1.6rem;
+    right: 2.5rem;
+    padding: 0; }
+    input#toggle-list ~ h3 ul li {
+      background-color: rgba(38, 38, 38, 0.9);
+      border: 1px solid rgba(157, 157, 157, 0.95);
+      list-style-type: none;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      font-weight: normal; }
+      input#toggle-list ~ h3 ul li label:hover {
+        cursor: pointer;
+        color: #28FFFF; }
+  input#toggle-list:checked ~ h3 ul {
+    display: block; }
+  input#toggle-list:checked ~ h3 #app-nav > label:before {
+    content: '';
+    display: block;
+    border: 1px solid rgba(157, 157, 157, 0.95);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0.25rem;
+    background-color: rgba(38, 38, 38, 0.9);
+    z-index: -1;
+    top: -0.3rem;
+    right: 0; }
+
+input[type="radio"]#greet-visitor:checked ~ #app [data-selector="greet-visitor"] {
+  color: rgba(157, 157, 157, 0.95);
+  text-decoration: line-through; }
+
+input[type="radio"]#greet-visitor:checked ~ section {
+  top: -100%; }
+  input[type="radio"]#greet-visitor:checked ~ section[data-selector="greet-visitor"] {
+    top: 0; }
+    input[type="radio"]#greet-visitor:checked ~ section[data-selector="greet-visitor"] ~ section {
+      top: 100%; }
+
+input[type="radio"]#read-more:checked ~ #app [data-selector="read-more"] {
+  color: rgba(157, 157, 157, 0.95);
+  text-decoration: line-through; }
+
+input[type="radio"]#read-more:checked ~ section {
+  top: -100%; }
+  input[type="radio"]#read-more:checked ~ section[data-selector="read-more"] {
+    top: 0; }
+    input[type="radio"]#read-more:checked ~ section[data-selector="read-more"] ~ section {
+      top: 100%; }
+
+input[type="radio"]#specs:checked ~ #app [data-selector="specs"] {
+  color: rgba(157, 157, 157, 0.95);
+  text-decoration: line-through; }
+
+input[type="radio"]#specs:checked ~ section {
+  top: -100%; }
+  input[type="radio"]#specs:checked ~ section[data-selector="specs"] {
+    top: 0; }
+    input[type="radio"]#specs:checked ~ section[data-selector="specs"] ~ section {
+      top: 100%; }
+
+input[type="radio"]#creator:checked ~ #app [data-selector="creator"] {
+  color: rgba(157, 157, 157, 0.95);
+  text-decoration: line-through; }
+
+input[type="radio"]#creator:checked ~ section {
+  top: -100%; }
+  input[type="radio"]#creator:checked ~ section[data-selector="creator"] {
+    top: 0; }
+    input[type="radio"]#creator:checked ~ section[data-selector="creator"] ~ section {
+      top: 100%; }
 
 #app {
   width: 39vw;
@@ -73,17 +128,19 @@ input[type="radio"] {
       float: right;
       margin-top: -0.25rem;
       position: relative; }
-      #app h3 #app-nav:before {
-        content: '';
+      #app h3 #app-nav label {
         display: block;
         position: absolute;
         top: 0.33rem;
-        left: -0.8rem;
+        left: -1.5rem;
         width: 1rem;
         height: 1rem;
         background-image: radial-gradient(circle at center, white 45%, transparent 45%);
         background-size: 0.33rem;
         background-repeat: repeat-y; }
+        #app h3 #app-nav label:hover {
+          cursor: pointer;
+          background-image: radial-gradient(circle at center, #28FFFF 45%, transparent 45%); }
   #app nav {
     list-style-type: none;
     margin: 1rem 0 0;

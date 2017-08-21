@@ -1,0 +1,121 @@
+@import 'partials/colors';
+@media screen and (max-width: 850px){
+  #app {
+    left: 53vw;
+  }
+  section {
+    .container {
+      left: 5vw;
+      width: 42vw;
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  * {
+    box-sizing: border-box;
+  }
+  .mobile {
+    display: block;
+    height: 100vh;
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      > * {
+        flex: 1 auto;
+      }
+    }
+  }
+  .desktop {
+    display: none;
+  }
+  body {
+    background-color: $bg-color;
+    font-family: 'Inconsolata', sans-serif;
+  }
+  .spacer label {
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    border-bottom: 1px solid $gray;
+    padding-bottom: 0.5rem;
+    letter-spacing: 1px;
+    &:hover {
+      color: $header;
+      cursor: pointer;
+    }
+    & + div {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.2s;
+      color: white;
+      background: $background;
+      margin-top: 0.5rem;
+      p {
+        margin: 0.5rem;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+      }
+    }
+  }
+  input:checked + label + div {
+    max-height: 100vh;
+    margin-bottom: 1rem;
+  }
+  h3, .content .spacer {
+    padding: 0.5rem 1rem;
+  }
+  h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+    order: 1;
+    span.title {
+      &:before {
+        content: '//';
+        font-weight: initial;
+        color: $gray;
+        margin-right: 0.25rem;
+        letter-spacing: 0;
+      }
+      span {
+        letter-spacing: 2px;
+        color: $header;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+    #app-nav {
+      font-size: 2.2rem;
+      float: right;
+      margin-top: -0.3rem;
+      position: relative;
+      label {
+        display: block;
+        position: absolute;
+        top: 0.35rem;
+        left: -1.4rem;
+        width: 1.53rem;
+        height: 1.53rem;
+        background-image: radial-gradient(circle at center, white 45%, transparent 45%);
+        background-size: 33%;
+        background-repeat: repeat-y;
+        &:hover {
+          cursor: pointer;
+          background-image: radial-gradient(circle at center, $header 45%, transparent 45%);
+        }
+      }
+    }
+  }
+  .mobile .content-container {
+    order: 2;
+    flex-grow: 20;
+  }
+  .content .spacer {
+    padding: 0 1rem;
+  }
+  footer {
+    order: 3;
+  }
+}

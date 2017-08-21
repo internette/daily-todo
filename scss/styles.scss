@@ -10,11 +10,67 @@ html, body {
 * {
   box-sizing: border-box;
 }
-input[type="radio"] {
+.mobile {
   display: none;
-  @each $selector in (greet-visitor, read-more, specs){
+}
+.desktop {
+  display: block;
+}
+input {
+  display: none;
+  &#toggle-list {
+    ~ h3 {
+      ul {
+        display: none;
+        z-index: 1;
+        position: absolute;
+        top: 1.6rem;
+        right: 2.5rem;
+        padding: 0;
+        li {
+          background-color: $background;
+          border: 1px solid $gray;
+          list-style-type: none;
+          padding: 0.75rem 1rem;
+          font-size: 1rem;
+          letter-spacing: 1.5px;
+          font-weight: normal;
+          label:hover {
+            cursor: pointer;
+            color: $header;
+          }
+        }
+  
+      }
+    }
+    &:checked {
+      ~ h3 {
+        ul {
+          display: block;
+        }
+        #app-nav > label {
+          &:before {
+            content: '';
+            display: block;
+            border: 1px solid $gray;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 0.25rem;
+            background-color: $background; 
+            z-index: -1;
+            top: -0.3rem;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+input[type="radio"] {
+  @each $selector in (greet-visitor, read-more, specs, creator){
     &##{$selector}:checked {
-      & ~ * nav [data-selector="#{$selector}"] {
+      & ~ #app [data-selector="#{$selector}"] {
         color: $gray;
         text-decoration: line-through;
       }
@@ -69,17 +125,20 @@ input[type="radio"] {
       float: right;
       margin-top: -0.25rem;
       position: relative;
-      &:before {
-        content: '';
+      label {
         display: block;
         position: absolute;
         top: 0.33rem;
-        left: -0.8rem;
+        left: -1.5rem;
         width: 1rem;
         height: 1rem;
         background-image: radial-gradient(circle at center, white 45%, transparent 45%);
         background-size: 0.33rem;
         background-repeat: repeat-y;
+        &:hover {
+          cursor: pointer;
+          background-image: radial-gradient(circle at center, $header 45%, transparent 45%);
+        }
       }
     }
   }
