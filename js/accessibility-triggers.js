@@ -1,5 +1,5 @@
 window.onload = function(){
-  var nav_links = document.querySelectorAll('#app nav label');
+  var nav_links = document.querySelectorAll('#app nav label, .mobile .spacer label');
   for(var i = 0; i < nav_links.length; i++){
     var nav_link = nav_links[i];
     nav_link.addEventListener('focus', function(e){
