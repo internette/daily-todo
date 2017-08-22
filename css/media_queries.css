@@ -30,6 +30,8 @@
     padding-bottom: 0.5rem;
     letter-spacing: 1px;
     transition: 0.2s; }
+    .spacer label:focus {
+      outline-color: #7ed3ed; }
     .spacer label:hover {
       color: #28FFFF;
       cursor: pointer; }

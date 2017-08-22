@@ -41,6 +41,9 @@
     padding-bottom: 0.5rem;
     letter-spacing: 1px;
     transition: 0.2s;
+    &:focus {
+      outline-color: mix($header, skyblue, 10%);
+    }
     &:hover {
       color: $header;
       cursor: pointer;
