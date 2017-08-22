@@ -126,8 +126,8 @@
         background-size: 33%;
         background-repeat: repeat-y;
         &:hover {
-          cursor: pointer;
-          background-image: radial-gradient(circle at center, $header 45%, transparent 45%);
+          cursor: initial;
+          color: white;
         }
       }
     }

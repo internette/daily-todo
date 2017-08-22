@@ -98,8 +98,8 @@
         background-size: 33%;
         background-repeat: repeat-y; }
         h3 #app-nav label:hover {
-          cursor: pointer;
-          background-image: radial-gradient(circle at center, #28FFFF 45%, transparent 45%); }
+          cursor: initial;
+          color: white; }
   .mobile .content-container {
     order: 2;
     flex-grow: 40; }
