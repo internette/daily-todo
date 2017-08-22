@@ -141,5 +141,19 @@
   footer {
     order: 3;
     padding: 0 1rem;
+    color: white;
+    letter-spacing: 1px;
+    span {
+      color: $header;
+    }
+    a {
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      transition: 0.2s;
+      &:hover {
+        color: $header;
+      }
+    }
   }
 }

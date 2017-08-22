@@ -106,4 +106,15 @@
     padding: 0 1rem; }
   footer {
     order: 3;
-    padding: 0 1rem; } }
+    padding: 0 1rem;
+    color: white;
+    letter-spacing: 1px; }
+    footer span {
+      color: #28FFFF; }
+    footer a {
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      transition: 0.2s; }
+      footer a:hover {
+        color: #28FFFF; } }
