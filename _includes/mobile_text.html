@@ -1,0 +1,16 @@
+{% assign data = include.data %}
+{% if data.body_title %}
+    {% assign body_title = data.body_title %}
+{% else %}
+    {% assign body_title = data.label %}
+{% endif %}
+<div>
+    <div class="spacer">
+    <input id="mobile-{{data.selector}}" type="radio" name="mobile-nav"/>
+    <label for="mobile-{{data.selector}}" tabindex="0">{{data.label}}</label>
+    <div>
+        <h2>{{body_title}}</h2>
+        <p>{{data.text}}</p>
+    </div>
+    </div>
+</div>
