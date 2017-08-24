@@ -3,6 +3,22 @@ layout: default
 title: Home
 type: home
 ---
+<div class="mobile">
+  <div class="container">
+    {% include title.html %}
+    <div class="content-container">
+      <div class="content">
+        {% for ctn in site.data.content %}
+          {% include mobile_text.html data=ctn %}
+        {% endfor %}
+      </div>
+    </div>
+    <footer>
+      <p>Made with <span>&hearts;</span> by <a href="https://acjanus.co" rel="noopener"
+target="_blank">Antoinette</a></p>
+    </footer>
+  </div>
+</div>
 <div class="desktop">
   {% for ctn in site.data.content %}
     <input type="radio" name="navigate" id="{{ctn.selector}}" {% if forloop.index0 == 0 %}checked{% endif %}>
@@ -21,20 +37,4 @@ type: home
   {% for ctn in site.data.content %}
     {% include desktop_text.html data=ctn %}
   {% endfor %}
-</div>
-<div class="mobile">
-  <div class="container">
-    {% include title.html %}
-    <div class="content-container">
-      <div class="content">
-        {% for ctn in site.data.content %}
-          {% include mobile_text.html data=ctn %}
-        {% endfor %}
-      </div>
-    </div>
-    <footer>
-      <p>Made with <span>&hearts;</span> by <a href="https://acjanus.co" rel="noopener"
-target="_blank">Antoinette</a></p>
-    </footer>
-  </div>
 </div>
