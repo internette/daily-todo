@@ -9,7 +9,7 @@ type: home
   {% endfor %}
   <div id="app">
     <input type="checkbox" id="toggle-list" name="navigate"/>
-    <h3><span class="title"><span>DAILY<span>_TODO</span></span></span><div id="app-nav"><label for="toggle-list"></label>&times;</div><ul><li><label for="creator" data-selector="creator">About the creator</label></li></ul></h3>
+    {% include title.html desktop=true %}
     <nav>
       {% for ctn in site.data.content %}
         {% if ctn.in_desktop_nav %}
@@ -24,7 +24,7 @@ type: home
 </div>
 <div class="mobile">
   <div class="container">
-    <h3><div><span class="title"><span>DAILY<span>_TODO</span></span></span><div id="app-nav"><label for="toggle-list"></label>&times;</div></div></h3>
+    {% include title.html %}
     <div class="content-container">
       <div class="content">
         {% for ctn in site.data.content %}
