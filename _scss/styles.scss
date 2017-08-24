@@ -48,7 +48,7 @@ input {
         ul {
           display: block;
         }
-        #app-nav > label {
+        .app-nav > label {
           &:before {
             content: '';
             display: block;
@@ -120,7 +120,7 @@ input[type="radio"] {
         }
       }
     }
-    #app-nav {
+    .app-nav {
       font-size: 1.5rem;
       float: right;
       margin-top: -0.25rem;
