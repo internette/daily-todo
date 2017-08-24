@@ -5,13 +5,16 @@ var cache_name = 'daily-todo-1.0';
 
 // Assesto catche
 var assets_to_cache = [
-  '/fonts/inconsolata-regular.ttf',
-  '/fonts/inconsolata-bold.ttf',
-  '/css/main.min.css',
-  '/css/media_queries.min.css',
-  '/js/accessibility-triggers.js',
-  '/js/register-sw.js',
-  '/images/favicon.png'
+  './fonts/Inconsolata-Regular.ttf',
+  './fonts/Inconsolata-Regular.eot',
+  './fonts/Inconsolata-Bold.ttf',
+  './fonts/Inconsolata-Bold.eot',
+  './css/main.min.css',
+  './css/media_queries.min.css',
+  './js/accessibility-triggers.js',
+  './js/register-sw.js'
+//   ,
+//   './images/favicon.png'
 ];
 
 self.addEventListener('install', function (event) {
