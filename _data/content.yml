@@ -2,7 +2,7 @@
   selector: greet-visitor
   label: Greet Visitor
   in_desktop_nav: true
-  text: lipsum
+  text: Daily_ToDo is a desktop application meant to help you get better every day by allowing users to check off their daily tasks every day without ever having to re-add them.
   body_title: Daily_ToDo
 
 - section: about
