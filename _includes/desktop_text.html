@@ -1,0 +1,14 @@
+{% assign data = include.data %}
+{% if data.body_title %}
+    {% assign body_title = data.body_title %}
+{% else %}
+    {% assign body_title = data.label %}
+{% endif %}
+<section data-selector="{{data.selector}}">
+    <div class="container">
+      <div>
+        <h1 data-title="{{body_title}}">{{body_title}}</h1>
+        <p>{{data.text}}</p>
+      </div>
+    </div>
+  </section>

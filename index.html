@@ -1,110 +1,40 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Daily_ToDo Site</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/media_queries.css">
-  </head>
-  <body>
-    <div class="desktop">
-      <input type="radio" name="navigate" id="greet-visitor" checked>
-      <input type="radio" name="navigate"
-      id="read-more">
-      <input type="radio" name="navigate"
-      id="specs">
-      <input type="radio" name="navigate"
-      id="creator">
-      <div id="app">
-        <input type="checkbox" id="toggle-list" name="navigate"/>
-        <h3><span class="title"><span>DAILY<span>_TODO</span></span></span><div id="app-nav"><label for="toggle-list"></label>&times;</div><ul><li><label for="creator" data-selector="creator">About the creator</label></li></ul></h3>
-        <nav>
-          <label for="greet-visitor" data-selector="greet-visitor" tabindex="0">
-            Greet visitor<span>&times;</span>
-          </label>
-          <label for="read-more" data-selector="read-more" tabindex="0">
-            What is it?<span>&times;</span>
-          </label>
-          <label for="specs" data-selector="specs" tabindex="0">
-            Check out specs<span>&times;</span>
-          </label>
-        </nav>
-      </div>
-      <section data-selector="greet-visitor">
-        <div class="container">
-          <div>
-            <h1 data-title="daily_todo">Daily_ToDo</h1>
-            <p>Oh hello. You've</p>
-          </div>
-        </div>
-      </section>
-      <section data-selector="read-more">
-        <div class="container">
-          <div>
-            <h1 data-title="daily_todo">Daily_ToDo</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ligula vitae quam viverra feugiat eu a nunc. Donec in viverra diam. Nulla consectetur tortor congue nisl accumsan, a laoreet tortor tristique. Nam quis laoreet nibh, ut pretium lectus. Aenean fermentum fermentum semper. Nulla eget lacinia quam. Vivamus sed tempus massa, venenatis tempus massa. Aliquam eleifend vel dolor a dictum. Curabitur tincidunt mauris eget fringilla imperdiet.</p>
-          </div>
-        </div>
-      </section>
-      <section data-selector="specs">
-        <div class="container">
-          <div>
-            <h1 data-title="specs">Specs</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ligula vitae quam viverra feugiat eu a nunc. Donec in viverra diam. Nulla consectetur tortor congue nisl accumsan, a laoreet tortor tristique. Nam quis laoreet nibh, ut pretium lectus. Aenean fermentum fermentum semper. Nulla eget lacinia quam. Vivamus sed tempus massa, venenatis tempus massa. Aliquam eleifend vel dolor a dictum. Curabitur tincidunt mauris eget fringilla imperdiet.</p>
-          </div>
-        </div>
-      </section>
-      <section data-selector="creator">
-        <div class="container">
-          <div>
-            <h1 data-title="creator">Creator</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ligula vitae quam viverra feugiat eu a nunc. Donec in viverra diam. Nulla consectetur tortor congue nisl accumsan, a laoreet tortor tristique. Nam quis laoreet nibh, ut pretium lectus. Aenean fermentum fermentum semper. Nulla eget lacinia quam. Vivamus sed tempus massa, venenatis tempus massa. Aliquam eleifend vel dolor a dictum. Curabitur tincidunt mauris eget fringilla imperdiet.</p>
-          </div>
-        </div>
-      </section>
-      <script src="js/accessibility-triggers.js"></script>
-    </div>
-    <div class="mobile">
-      <div class="container">
-        <h3><div><span class="title"><span>DAILY<span>_TODO</span></span></span><div id="app-nav"><label for="toggle-list"></label>&times;</div></div></h3>
-        <div class="content-container">
-          <div class="content">
-            <div>
-              <div class="spacer">
-                <input id="mobile-greetings" type="radio" name="mobile-nav"/>
-                <label for="mobile-greetings" tabindex="0">Greetings</label>
-                <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit ut elit vitae interdum. Aenean placerat diam vitae lobortis gravida. Aliquam erat volutpat. Sed commodo elementum sapien quis laoreet. Mauris elementum vel nunc et commodo. Sed nulla elit, dignissim at lorem sed, cursus posuere massa. Nullam quis est ullamcorper erat ornare molestie.</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="spacer">
-                <input id="mobile-about" type="radio" name="mobile-nav"/>
-                <label for="mobile-about" tabindex="0">About Daily_ToDo</label>
-                <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit ut elit vitae interdum. Aenean placerat diam vitae lobortis gravida. Aliquam erat volutpat. Sed commodo elementum sapien quis laoreet. Mauris elementum vel nunc et commodo. Sed nulla elit, dignissim at lorem sed, cursus posuere massa. Nullam quis est ullamcorper erat ornare molestie.</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="spacer">
-                <input id="mobile-specs" type="radio" name="mobile-nav"/>
-                <label for="mobile-specs" tabindex="0">Specs</label>
-                <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit ut elit vitae interdum. Aenean placerat diam vitae lobortis gravida. Aliquam erat volutpat. Sed commodo elementum sapien quis laoreet. Mauris elementum vel nunc et commodo. Sed nulla elit, dignissim at lorem sed, cursus posuere massa. Nullam quis est ullamcorper erat ornare molestie.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer>
-          <p>Made with <span>&hearts;</span> by <a href="https://acjanus.co" target="_blank">Antoinette</a></p>
-        </footer>
+---
+layout: default
+title: Home
+type: home
+---
+<div class="mobile">
+  <div class="container">
+    {% include title.html %}
+    <div class="content-container">
+      <div class="content">
+        {% for ctn in site.data.content %}
+          {% include mobile_text.html data=ctn %}
+        {% endfor %}
       </div>
     </div>
-  </body>
-</html>
+    <footer>
+      <p>Made with <span>&hearts;</span> by <a href="https://acjanus.co" rel="noopener"
+target="_blank">Antoinette</a></p>
+    </footer>
+  </div>
+</div>
+<div class="desktop">
+  {% for ctn in site.data.content %}
+    <input type="radio" name="navigate" id="{{ctn.selector}}" {% if forloop.index0 == 0 %}checked{% endif %}>
+  {% endfor %}
+  <div id="app">
+    <input type="checkbox" id="toggle-list" name="navigate"/>
+    {% include title.html desktop=true %}
+    <nav>
+      {% for ctn in site.data.content %}
+        {% if ctn.in_desktop_nav %}
+          {% include label.html data=ctn %}
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+  {% for ctn in site.data.content %}
+    {% include desktop_text.html data=ctn %}
+  {% endfor %}
+</div>
