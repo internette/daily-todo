@@ -20,7 +20,8 @@ window.onload = function(){
     params[param.split('=')[0].toLowerCase()] = param.split('=')[1];
     return;
   });
-  if(params.hasOwnProperty('id') && params.hasOwnProperty('id')){
+  console.log(params);
+  if(params.hasOwnProperty('id') && params.hasOwnProperty('token')){
     db.ref("/email_addresses/" + params.id).on('value', function(snapshot){
       const entity = snapshot.val();
       console.log(entity);
