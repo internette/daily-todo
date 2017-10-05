@@ -4,7 +4,8 @@
   "description": "This is the repo for the website for the app DailyToDo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify js/unsubscribe.js -o js/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/twaffl3s/daily-todo-site#readme",
   "devDependencies": {
+    "dailytodo-firebase-config": "http://ec2-54-225-24-24.compute-1.amazonaws.com/public/config/dailytodo-firebase-config-1.0.0.tgz",
+    "firebase": "^4.5.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
   }
