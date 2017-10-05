@@ -15,7 +15,18 @@ window.onload = function(){
     // ...
   });
   const db = firebase.database();
-  const location_params = window.location.search.split(';');
-  const specificDbRef = db.ref("/email_addresses");
+  const params = {};
+  const location_params = window.location.search.split(';').map(function(param){
+    params[param.split('=')[0].toLowerCase()] = param.split('=')[1];
+    return;
+  });
+  if(params.hasOwnProperty('id') && params.hasOwnProperty('id')){
+    db.ref("/email_addresses/" + params.id).on('value', function(snapshot){
+      const entity = snapshot.val();
+      console.log(entity);
+    })
+  }
+  // const specificDbRef = db.ref("/email_addresses");
+  
   
 }
