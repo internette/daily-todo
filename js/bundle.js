@@ -17,18 +17,28 @@ window.onload = function(){
   });
   const db = firebase.database();
   const params = {};
-  const location_params = window.location.search.split(';').map(function(param){
-    params[param.split('=')[0].toLowerCase()] = param.split('=')[1];
-    return;
+  window.location.search.split(/[?&]/g).filter(function(str){
+    if(str.length > 0) {
+      return str
+    }
+  }).map(function(param){
+    var parsed_param = param.split('=');
+    params[parsed_param[0].toLowerCase()] = parsed_param[1];
   });
-  console.log(params);
   if(params.hasOwnProperty('id') && params.hasOwnProperty('token')){
+    const specificDbRef = db.ref("/email_addresses");
     db.ref("/email_addresses/" + params.id).on('value', function(snapshot){
       const entity = snapshot.val();
-      console.log(entity);
+      if(entity !== null){
+        if(params.token === entity.SHA){
+          specificDbRef.child(params.id).remove()
+          return;
+        }
+      } else {
+        console.error('there was a problem');
+      }
     })
   }
-  // const specificDbRef = db.ref("/email_addresses");
   
   
 }
