@@ -9,12 +9,9 @@ var assets_to_cache = [
   '/fonts/Inconsolata-Regular.eot',
   '/fonts/Inconsolata-Bold.ttf',
   '/fonts/Inconsolata-Bold.eot',
-  '/css/main.min.css',
-  '/css/media_queries.min.css',
+  '/css/styles.css',
   '/js/accessibility-triggers.js',
   '/js/register-sw.js'
-//   ,
-//   './images/favicon.png'
 ];
 
 self.addEventListener('install', function (event) {
