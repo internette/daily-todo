@@ -2,14 +2,14 @@
   selector: greet-visitor
   label: Greet Visitor
   in_desktop_nav: true
-  text: Daily_ToDo is a desktop application meant to help you get better every day rewarding users with the ability to check off their daily tasks every day while never having to re-add them.
+  text: Daily_ToDo is a desktop application meant to help you get better at the monotony of every day. How? By rewarding you with that amazing feeling of crossing of a to-do list, a list that resets its own statuses at midnight. No longer do you have to worry about remember what you've done that day.
   body_title: Daily_ToDo
 
 - section: about
   selector: read-more
   label: What is it?
   in_desktop_nav: true
-  text: lipsum
+  text: test
 
 - section: specs
   selector: specs
