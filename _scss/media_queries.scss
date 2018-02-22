@@ -123,12 +123,13 @@
         display: block;
         position: absolute;
         top: 0.7rem;
-        right: 1rem;
+        right: 0;
         width: 1.53rem;
         height: 1.53rem;
         background-image: radial-gradient(circle at center, white 45%, transparent 45%);
         background-size: 33%;
         background-repeat: repeat-y;
+        background-position: right top;
         &:hover {
           cursor: initial;
           color: white;

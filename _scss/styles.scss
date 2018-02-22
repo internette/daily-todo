@@ -104,6 +104,7 @@ input[type="radio"] {
     color: transparent;
     z-index: -1;
     -webkit-background-clip: text;
+    background-clip: text;
   }
 }
 .unsubscribe {
@@ -234,6 +235,43 @@ section {
     > div {
       padding: 1.5rem;
       position: relative;
+      ul {
+        li {
+          margin: 0.2rem 0;
+        }
+        a {
+          font-family: 'Inconsolata', sans-serif;
+          font-weight: bold;
+          position: relative;
+          text-transform: uppercase;
+          z-index: 1;
+          text-decoration: none;
+          color: black;
+          transition: 0.1s;
+          letter-spacing: 1px;
+          &:after {
+            background-image: repeating-linear-gradient(45deg, black 1px, transparent 2px, transparent 3px);
+            content: attr(data-title);
+            text-transform: uppercase;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: transparent;
+            z-index: -1;
+            -webkit-background-clip: text;
+            background-clip: text;
+            white-space: nowrap;
+            transition: 0.1s;
+          }
+          &:hover {
+            margin: -2px 0 0 -1.5px;
+            &:after {
+              top: 4px;
+              left: 3px;
+            }
+          }
+        }
+      }
     }
     h3 {
       padding-bottom: 0.75rem;

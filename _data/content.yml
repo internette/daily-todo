@@ -2,20 +2,25 @@
   selector: greet-visitor
   label: Greet Visitor
   in_desktop_nav: true
-  text: Daily_ToDo is a desktop application meant to help you get better at the monotony of every day. How? By rewarding you with that amazing feeling of crossing of a to-do list, a list that resets its own statuses at midnight. No longer do you have to worry about remember what you've done that day.
+  text: Daily_ToDo is a desktop application that improves working on daily tasks. Rewarding you with the euphoric feeling of crossing of a to-do list without having to re-add tasks every day. No longer do you have to worry about remember what you've done that day or what's left to do.
   body_title: Daily_ToDo
 
 - section: about
   selector: read-more
   label: What is it?
   in_desktop_nav: true
-  text: test
+  text: Daily_ToDo is a desktop app that betters habits by gamifying to-do lists. Add to-do items that 
 
 - section: specs
   selector: specs
   label: Check out specs
   in_desktop_nav: true
-  text: lipsum
+  text: Daily_ToDo is built on the following:<ul>
+    <li><a href="https://reactjs.org/" target="_blank" data-title="React">React</a></li>
+    <li><a href="http://redux.js.org/" target="_blank" data-title="Redux">Redux</a></li>
+    <li><a href="https://electron.atom.io/" target="_blank" data-title="Electron">Electron</a></li>
+    <li><a href="https://www.npmjs.com/" target="_blank" data-title="Many NPM Modules">Many NPM Modules</a></li>
+    </ul>
   body_title: The Bits
 
 - section: creator
