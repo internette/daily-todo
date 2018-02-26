@@ -5,7 +5,12 @@
     <main role="main">
         {{content}}
     </main>
-    {% include_relative js/register-sw.js %}
-    <script src="../js/accessibility-triggers.js"></script>
+    {% for js_file in site.static_files %}
+      {% if js_file.basename contains 'register-sw' %}
+        <script src="/assets/js/{{ js_file.basename | append:'js' }}.js"></script>
+      {% else if js_file.basename contains 'accessibility-triggers' %}
+        <script src="/assets/js/{{ js_file.basename | append:'js' }}.js"></script>
+      {% endif %}
+    {% endfor %}
   </body>
 </html>
