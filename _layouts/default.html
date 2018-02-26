@@ -7,9 +7,9 @@
     </main>
     {% for js_file in site.static_files %}
       {% if js_file.basename contains 'register-sw' %}
-        <script src="/assets/js/{{ js_file.basename | append:'js' }}.js"></script>
+        <script src="/assets/js/{{ js_file.basename }}.js"></script>
       {% else if js_file.basename contains 'accessibility-triggers' %}
-        <script src="/assets/js/{{ js_file.basename | append:'js' }}.js"></script>
+        <script src="/assets/js/{{ js_file.basename }}.js"></script>
       {% endif %}
     {% endfor %}
   </body>
