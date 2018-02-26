@@ -16,17 +16,17 @@
   label: Check out specs
   in_desktop_nav: true
   text: Daily_ToDo is built on the following:<ul>
-    <li><a href="https://reactjs.org/" target="_blank" data-title="React">React</a></li>
-    <li><a href="http://redux.js.org/" target="_blank" data-title="Redux">Redux</a></li>
-    <li><a href="https://electron.atom.io/" target="_blank" data-title="Electron">Electron</a></li>
-    <li><a href="https://www.npmjs.com/" target="_blank" data-title="Many NPM Modules">Many NPM Modules</a></li>
+    <li><a href="https://reactjs.org/" rel="noopener" target="_blank" data-title="React">React</a></li>
+    <li><a href="http://redux.js.org/" rel="noopener" target="_blank" data-title="Redux">Redux</a></li>
+    <li><a href="https://electron.atom.io/" rel="noopener" target="_blank" data-title="Electron">Electron</a></li>
+    <li><a href="https://www.npmjs.com/" rel="noopener" target="_blank" data-title="Many NPM Modules">Many NPM Modules</a></li>
     </ul>
     <p><strong>Download</strong></p>
-    <p class="mobile">Currently, Daily_ToDo is only available for the desktop. Want to see the app on your mobile device? You can share your desires to the creator, <a href="mailto:acj.gfx@gmail.com">Antoinette</a></p>
+    <p class="mobile">Currently, Daily_ToDo is only available for the desktop. Want to see the app on your mobile device? You can share your desires to the creator, <a href="mailto:acj.gfx@gmail.com" rel="noopener">Antoinette</a></p>
     <p class="desktop">Choose the appropriate download link below based on your current operating system.</p>
     <ul class="download-items desktop">
-    <li class="hide"><a href=""><span><i class="fab fa-windows"></i>Windows</span><img src="./images/icon.png" alt="DailyToDo Icon."/></a><li>
-    <li class="hide"><a href="https://s3.amazonaws.com/daily-todo/DailyToDo-1.0.0.dmg" target="_blank"><span><i class="fab fa-apple"></i>OSX</span><img src="./images/icon.png" alt="DailyToDo Icon."/></a><li>    </ul>
+    <li class="hide"><a href="" target="_blank" rel-"noopener"><span><i class="fab fa-windows"></i>Windows</span><img src="./images/icon.png" alt="DailyToDo Icon."/></a><li>
+    <li class="hide"><a href="https://s3.amazonaws.com/daily-todo/DailyToDo-1.0.0.dmg" target="_blank" rel="noopener"><span><i class="fab fa-apple"></i>OSX</span><img src="./images/icon.png" alt="DailyToDo Icon."/></a><li></ul>
   body_title: The Bits
 
 - section: creator
