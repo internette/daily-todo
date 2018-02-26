@@ -45,7 +45,7 @@ gulp.task('sass-fonts', function () {
       .pipe(sass())
       .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
       .pipe(minifycss())
-      .pipe(rename('media_queries.min.css'))
+      .pipe(rename('fonts.min.css'))
       .pipe(gulp.dest('css'))
       .pipe(gulp.dest('_includes'))
       .pipe(browserSync.reload({ stream: true }));
