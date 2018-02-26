@@ -40,6 +40,16 @@ gulp.task('sass-main', function () {
         .pipe(gulp.dest('_includes'))
         .pipe(browserSync.reload({ stream: true }));
 });
+gulp.task('sass-fonts', function () {
+  return gulp.src('_scss/fonts.scss')
+      .pipe(sass())
+      .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+      .pipe(minifycss())
+      .pipe(rename('media_queries.min.css'))
+      .pipe(gulp.dest('css'))
+      .pipe(gulp.dest('_includes'))
+      .pipe(browserSync.reload({ stream: true }));
+});
 gulp.task('sass-mq', function () {
     return gulp.src('_scss/media_queries.scss')
         .pipe(sass())
@@ -57,7 +67,7 @@ gulp.task('sass-mq', function () {
  * Minify images too
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/**/*.scss', ['sass-main', 'sass-mq']);
+    gulp.watch('_scss/**/*.scss', ['sass-main', 'sass-fonts', 'sass-mq']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html'], ['jekyll-rebuild']);
     gulp.watch(['images/*'], ['jekyll-build']);
     gulp.watch(['js/*.js'], ['jekyll-build']);
