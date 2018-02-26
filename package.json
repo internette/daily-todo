@@ -19,7 +19,14 @@
   },
   "homepage": "https://acjanus.co/daily-todo",
   "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "child_process": "^1.0.2",
     "dailytodo-firebase-config": "http://ec2-54-225-24-24.compute-1.amazonaws.com/public/config/dailytodo-firebase-config-1.0.0.tgz",
-    "firebase": "^4.5.0"
+    "firebase": "^4.5.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
   }
 }
