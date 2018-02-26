@@ -19,9 +19,21 @@
   * {
     box-sizing: border-box;
   }
+  ul {
+    list-style: none;
+    li {
+      &:before {
+        content: '\2665';
+        font-size: 0.65rem;
+        margin-right: 0.5rem;
+      }
+      a {
+        color: $header;
+      }
+    }
+  }
   .mobile {
     display: block;
-    height: 100vh;
     .container {
       display: flex;
       flex-direction: column;
