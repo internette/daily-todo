@@ -8,6 +8,9 @@ html, body {
   background-color: mix($header, white, 17%);
   font-family: sans-serif;
 }
+.hide {
+  display: none!important;
+}
 * {
   box-sizing: border-box;
 }
