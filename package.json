@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/internette/daily-todo-site.git"
+    "url": "git+https://github.com/internette/daily-todo.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/internette/daily-todo-site/issues"
+    "url": "https://github.com/internette/daily-todo.github.io/issues"
   },
-  "homepage": "https://github.com/internette/daily-todo-site#readme",
+  "homepage": "https://github.com/internette/daily-todo.github.io#readme",
   "devDependencies": {
     "dailytodo-firebase-config": "http://ec2-54-225-24-24.compute-1.amazonaws.com/public/config/dailytodo-firebase-config-1.0.0.tgz",
     "firebase": "^4.5.0",
