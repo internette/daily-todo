@@ -9,7 +9,7 @@
   selector: read-more
   label: What is it?
   in_desktop_nav: true
-  text: Daily_ToDo is a desktop app that betters habits by gamifying to-do lists. Add to-do items that 
+  text: <p>Daily_ToDo is a desktop app that betters habits by gamifying to-do lists. Add to-do items that you do daily, such as check e-mails in the morning, remind yourself of your lunch break at noon, or even wash your face before you go to bed. By providing a system that allows you to cross of daily items, your day becomes more managable and less of the scary monster that everyone fears first thing in the morning.</p><p>You never have to worry about what you're missing with Daily_ToDo. Instead of removing an item upon completion, Daily_ToDo merely crosses of the item while keeping the item on your list. The list is persistent, so all items will be there the next day. At midnight, your list resets with no actions whatsoever, making your life easier.</p>
 
 - section: specs
   selector: specs
@@ -21,10 +21,16 @@
     <li><a href="https://electron.atom.io/" target="_blank" data-title="Electron">Electron</a></li>
     <li><a href="https://www.npmjs.com/" target="_blank" data-title="Many NPM Modules">Many NPM Modules</a></li>
     </ul>
+    <p><strong>Download</strong></p>
+    <p class="mobile">Currently, Daily_ToDo is only available for the desktop. Want to see the app on your mobile device? You can share your desires to the creator, <a href="mailto:acj.gfx@gmail.com">Antoinette</a></p>
+    <p class="desktop">Choose the appropriate download link below based on your current operating system.</p>
+    <ul class="download-items desktop">
+    <li class="hide"><a href=""><span><i class="fab fa-windows"></i>Windows</span><img src="./images/icon.png" alt="DailyToDo Icon."/></a><li>
+    <li class="hide"><a href="https://s3.amazonaws.com/daily-todo/DailyToDo-1.0.0.dmg" target="_blank"><span><i class="fab fa-apple"></i>OSX</span><img src="./images/icon.png" alt="DailyToDo Icon."/></a><li>    </ul>
   body_title: The Bits
 
 - section: creator
   selector: creator
   label: About the creator
   in_desktop_nav: false
-  text: lipsum
+  text: <p><strong>Hey there!</strong></p><p>Somehow you found this section about me, <a href="https://acjanus.co/bio">Antoinette Janus</a>. I'm excited that you've found out about Daily_ToDo and hope you try it out. I hope you enjoy the app and see improvements in your daily life, especially the mundane. Have a great day~!</p>

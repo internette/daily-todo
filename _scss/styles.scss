@@ -287,3 +287,35 @@ section {
     }
   }
 }
+
+section .container > div .download-items {
+  list-style: none;
+  padding: 0;
+  li {
+    float: left;
+    position: relative;
+    text-align: center;
+    margin-right: 1rem;
+    span {
+      display: block;
+    }
+    a {
+      span > *:first-child {
+        margin-right: 5px;
+      }
+      img {
+        transition: 0.2s opacity;
+        width: 100%;
+        max-width: 40px;
+        margin-top: 10px;
+        opacity: 0.5;
+      }
+      &:hover {
+        margin: 0;
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
