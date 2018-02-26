@@ -14,7 +14,9 @@
     <meta name="theme-color" content="#f9e4e4">
     <meta property="og:url" content="{{ site.url }}{{ page.permalink }}" />
     <meta property="og:title" content="{{ page.title }}" />
-    {% include styles.min.css %}
-    {% include media_queries.min.css %}
+    <style>
+        {% include styles.min.css %}
+        {% include media_queries.min.css %}
+    </style>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
