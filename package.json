@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/internette/daily-todo.github.io.git"
+    "url": "git+https://github.com/internette/daily-todo-site.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/internette/daily-todo.github.io/issues"
+    "url": "https://github.com/internette/daily-todo-site/issues"
   },
   "homepage": "https://acjanus.co/daily-todo",
   "devDependencies": {
