@@ -26,7 +26,7 @@
     <p class="desktop">Choose the appropriate download link below based on your current operating system.</p>
     <ul class="download-items desktop">
     <li class="hide"><a href="" target="_blank" rel-"noopener"><span><i class="fab fa-windows"></i>Windows</span><img src="./images/icon.png" alt="DailyToDo Icon."/></a><li>
-    <li><a href="https://s3.amazonaws.com/daily-todo/Daily_ToDo-1.0.0.dmg" target="_blank" rel="noopener"><span><i class="fab fa-apple"></i>OSX</span><picture><source srcset="./images/icon.webp" type="image/webp"><source srcset="./images/icon.png" type="image/png"><img src="./images/icon.png" alt="DailyToDo Icon."/></picture></a><li></ul>
+    <li><a href="https://s3.amazonaws.com/daily-todo/Daily_ToDo.dmg" target="_blank" rel="noopener"><span><i class="fab fa-apple"></i>OSX</span><picture><source srcset="./images/icon.webp" type="image/webp"><source srcset="./images/icon.png" type="image/png"><img src="./images/icon.png" alt="DailyToDo Icon."/></picture></a><li></ul>
   body_title: The Bits
 
 - section: creator
